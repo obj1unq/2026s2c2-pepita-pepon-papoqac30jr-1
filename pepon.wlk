@@ -71,3 +71,22 @@ object pepon {
     return calorias < 34
   }
 }
+
+object rebeca {
+  var ave = pepita
+  var cena = 0
+  
+  method alimentar(alimento) {
+    ave.comer(alimento)
+    cena = cena + 1
+  }
+  
+  method ave(_ave) {
+    ave = _ave
+    cena = 0
+  }
+  
+  method ave() {
+    return ave
+  }
+}
